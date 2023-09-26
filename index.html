@@ -20,6 +20,14 @@
     color: white;
     padding: 10vh 0;
     min-height: 300px; /* Ensure the header always has a minimum height */
+    overflow: hidden; /* Hide any overflowing content */
+  }
+
+  /* Make the background image responsive */
+  @media (max-width: 768px) {
+    header {
+      background-size: contain;
+    }
   }
 
   .textbox {
@@ -80,7 +88,7 @@
 <body>
   <header>
     <!-- Add some content to the header to ensure it's visible -->
-    <h1> </h1>
+    <h1>.</h1>
   </header>
   <div class="textbox">
     <p>TRUCHA</p>
@@ -89,7 +97,7 @@
     <img src="trucha1.JPG" alt="Trucha">
   </div>
   <div class="label">
-    <p>$ 10.000</p>
+    <p>$ 9.000</p>
   </div>
   <div class="button-container">
     <a href="form-page.html"><button>COMPRAR</button></a>
